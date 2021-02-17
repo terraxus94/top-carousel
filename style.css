@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 50px auto;
+}
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-image {
+  max-width: 500px;
+}
+
+/* chevrons styling and active? states */
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 50px;
+  margin: 0 20px;
+  color: darkgrey;
+  opacity: 0.3;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+  opacity: 0.6;
+}
+
+/* active/inactive slide displaying */
+.inactive {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+  display: block;
+}
